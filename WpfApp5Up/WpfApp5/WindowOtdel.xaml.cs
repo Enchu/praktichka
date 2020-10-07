@@ -36,7 +36,7 @@ namespace WpfApp5
 		public WindowOtdel()
         {
             InitializeComponent();
-			//Load();
+			Load();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

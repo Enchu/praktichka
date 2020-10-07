@@ -31,18 +31,18 @@
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding Fam}"/>
                 <DataGridTextColumn Header="Имя" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Название" Binding="{Binding Patronomyc}"/>
-                <DataGridTextColumn Header="Состояние" Binding="{Binding Patronomyc}"/>
+                <DataGridTextColumn Header="Состояние" Binding="{Binding Socialstatus}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="108,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="169"/>
-        <Label Content="Сегодня" HorizontalAlignment="Left" Margin="48,54,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="48,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="311,159,-224,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="555,159,-481,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227"/>
-        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="48,128,0,0" VerticalAlignment="Top" Width="117"/>
-        <Label Content="Имя" HorizontalAlignment="Left" Margin="311,128,-130,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Отчество" HorizontalAlignment="Left" Margin="555,128,-354,0" VerticalAlignment="Top" Width="100"/>
-        <Button Content="Книги" HorizontalAlignment="Left" Margin="48,204,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Button_Click"/>
-        <Button Content="Возврат" HorizontalAlignment="Left" Margin="177,204,0,0" VerticalAlignment="Top" Width="100" Height="30"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="72,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="169"/>
+        <Label Content="Сегодня" HorizontalAlignment="Left" Margin="12,54,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="12,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="275,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="519,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="12,129,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="275,129,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="519,129,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Книги" HorizontalAlignment="Left" Margin="12,205,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Button_Click"/>
+        <Button Content="Возврат" HorizontalAlignment="Left" Margin="141,205,0,0" VerticalAlignment="Top" Width="100" Height="30"/>
     </Grid>
 </Window>

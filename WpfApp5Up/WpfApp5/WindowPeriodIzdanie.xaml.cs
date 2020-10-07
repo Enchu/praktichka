@@ -24,7 +24,7 @@ namespace WpfApp5
 		void Load()
 		{
 			Cn.Open();
-			MySqlCommand cmd = new MySqlCommand("SELECT * FROM `books`", Cn);
+			MySqlCommand cmd = new MySqlCommand("SELECT * FROM `periodofpublication`", Cn);
 			DataTable dt = new DataTable();
 			MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 			da.Fill(dt);
