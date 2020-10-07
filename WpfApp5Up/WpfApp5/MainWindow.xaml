@@ -13,9 +13,9 @@
                 <Separator />
                 <MenuItem Click="BTRegClient" Header="Регистрация клиентов" ></MenuItem>
                 <MenuItem Click="BTStaff" Header="Сотрудники" ></MenuItem>
-                <MenuItem Click="BTStaff" Header="Поступление" >
+                <MenuItem Header="Поступление" >
                     <MenuItem Click="BTBook" Header="Книги"></MenuItem>
-                    <MenuItem Click="BTBook" Header="Переодические издания"></MenuItem>
+                    <MenuItem Click="BTPeriodIzdanie" Header="Переодические издания"></MenuItem>
                 </MenuItem>
                 <Separator />
                 <MenuItem Click="BTExit" Header="Exit" ></MenuItem>

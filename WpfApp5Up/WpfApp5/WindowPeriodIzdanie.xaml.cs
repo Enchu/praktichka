@@ -11,14 +11,16 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using MySql.Data.MySqlClient;
+using System.IO;
 using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace WpfApp5
 {
-    public partial class WindowBook : Window
-    {
-        MySqlConnection Cn = new MySqlConnection("server = localhost; user id = root; port=3306;persistsecurityinfo=True;database=placplac");
+
+    public partial class WindowPeriodIzdanie : Window
+	{
+		MySqlConnection Cn = new MySqlConnection("server = localhost; user id = root; port=3306;persistsecurityinfo=True;database=placplac");
 		void Load()
 		{
 			Cn.Open();
@@ -33,7 +35,7 @@ namespace WpfApp5
 			DataGridOsn.ItemsSource = dt.DefaultView;
 			Cn.Close();
 		}
-		public WindowBook()
+		public WindowPeriodIzdanie()
         {
             InitializeComponent();
 			Load();

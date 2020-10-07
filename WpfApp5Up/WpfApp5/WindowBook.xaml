@@ -12,10 +12,10 @@
         </Grid.ColumnDefinitions>
         <DataGrid Grid.Column="0" IsReadOnly="True" Name="DataGridOsn" AutoGenerateColumns="False" ItemsSource="{Binding Path=dt}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="id" Binding="{Binding id}" Visibility="Hidden"/>
-                <DataGridTextColumn Header="Название" Binding="{Binding Fam}"/>
-                <DataGridTextColumn Header="Автор" Binding="{Binding Name}"/>
-                <DataGridTextColumn Header="Год издания" Binding="{Binding Patronomyc}"/>
+                <DataGridTextColumn Header="id" Binding="{Binding idbooks}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding name}"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding avtor}"/>
+                <DataGridTextColumn Header="Год издания" Binding="{Binding yearofpublishing}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

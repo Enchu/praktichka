@@ -68,6 +68,9 @@
     <Compile Include="WindowOtdel.xaml.cs">
       <DependentUpon>WindowOtdel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowPeriodIzdanie.xaml.cs">
+      <DependentUpon>WindowPeriodIzdanie.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowSpravka.xaml.cs">
       <DependentUpon>WindowSpravka.xaml</DependentUpon>
     </Compile>
@@ -95,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowOtdel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowPeriodIzdanie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

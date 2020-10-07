@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp5.WindowPeriodIzdanie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="WindowPeriodIzdanie" Height="450" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Grid.Column="0" IsReadOnly="True" Name="DataGridOsn" AutoGenerateColumns="False" ItemsSource="{Binding Path=dt}" Margin="0,0,-91,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id" Binding="{Binding id}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Fam}"/>
+                <DataGridTextColumn Header="Номер издания" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Месяц издания" Binding="{Binding Patronomyc}"/>
+                <DataGridTextColumn Header="Год издания" Binding="{Binding Patronomyc}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

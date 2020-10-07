@@ -61,12 +61,21 @@ namespace WpfApp5
 
         private void BTSprav(object sender, RoutedEventArgs e)
         {
-
+            WindowSpravka fm = new WindowSpravka();
+            fm.Show();
+            this.Close();
         }
 
         private void BTBook(object sender, RoutedEventArgs e)
         {
             WindowBook fm = new WindowBook();
+            fm.Show();
+            this.Close();
+        }
+
+        private void BTPeriodIzdanie(object sender, RoutedEventArgs e)
+        {
+            WindowPeriodIzdanie fm = new WindowPeriodIzdanie();
             fm.Show();
             this.Close();
         }
