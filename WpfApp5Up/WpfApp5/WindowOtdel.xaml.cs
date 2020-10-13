@@ -18,7 +18,7 @@ namespace WpfApp5
 {
     public partial class WindowOtdel : Window
     {
-		MySqlConnection Cn = new MySqlConnection("server = localhost; user id = root; port=3306;persistsecurityinfo=True;database=placplac");
+		MySqlConnection Cn = new MySqlConnection("server = localhost; user id = root; port=3310;persistsecurityinfo=True;database=placplac");
 		void Load()
 		{
 			Cn.Open();

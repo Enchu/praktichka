@@ -48,9 +48,11 @@
         <Label Content="Дата регистрации" HorizontalAlignment="Left" Margin="912,437,-519,0" VerticalAlignment="Top"/>
         <TextBox Name="Dateregistration" HorizontalAlignment="Left" Height="34" Margin="1060,429,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <ComboBox Name="Socialstatus" HorizontalAlignment="Left" Margin="1060,390,-756,0" VerticalAlignment="Top" Width="197" Height="26">
-            <TextBlock></TextBlock>
+            <TextBlock>Ученик</TextBlock>
+            <TextBlock>Работник</TextBlock>
         </ComboBox>
         <Button Name="TBAdd" Click="TBAdd_Click" HorizontalAlignment="Left" Margin="1060,480,-756,0" VerticalAlignment="Top" Width="197" Height="45" Content="Внести пользователя"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="912,480,-206,0" VerticalAlignment="Top" Width="95" Height="45" Click="Button_Click"/>
 
     </Grid>
 </Window>

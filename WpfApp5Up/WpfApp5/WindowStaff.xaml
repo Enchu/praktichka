@@ -68,10 +68,9 @@
         <Label Content="Семейное положение" HorizontalAlignment="Left" Margin="1520,714,-159,0" VerticalAlignment="Top" Width="140"/>
         <Label Content="Количество детей" HorizontalAlignment="Left" Margin="1520,761,-136,0" VerticalAlignment="Top" Width="117"/>
         <TextBox x:Name="numberchildren" HorizontalAlignment="Left" Height="34" Margin="1668,753,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <ComboBox x:Name="maritalstatus" HorizontalAlignment="Left" Margin="1668,714,-364,0" VerticalAlignment="Top" Width="197" Height="26">
-            <TextBlock/>
-        </ComboBox>
+        <TextBox x:Name="maritalstatus" HorizontalAlignment="Left" Height="34" Margin="1668,706,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <TextBox x:Name="whopassport" HorizontalAlignment="Left" Height="33" Margin="1668,384,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="1538,810,-136,0" VerticalAlignment="Top" Width="99" Height="45" Click="Button_Click"/>
 
     </Grid>
 </Window>

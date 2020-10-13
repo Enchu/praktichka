@@ -107,7 +107,6 @@ C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\bin\Debug\Syst
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\bin\Debug\MySql.Data.xml
-C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\WpfApp5.csprojAssemblyReference.cache
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\WpfApp5.exe.config
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\MainWindow.g.cs
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\Window1.g.cs

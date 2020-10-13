@@ -18,7 +18,7 @@ namespace WpfApp5
 {
     public partial class Window1 : Window
     {
-        MySqlConnection Cn = new MySqlConnection("server = localhost; user id = root; port=3306;persistsecurityinfo=True;database=placplac");
+        MySqlConnection Cn = new MySqlConnection("server = localhost; user id = root; port=3310;persistsecurityinfo=True;database=placplac");
 		void Load()
 		{
 			Cn.Open();
@@ -36,7 +36,7 @@ namespace WpfApp5
 		public Window1()
         {
             InitializeComponent();
-			//Load();
+			Load();
         }
 
         private void TBAdd_Click(object sender, RoutedEventArgs e)
@@ -47,7 +47,7 @@ namespace WpfApp5
 				{
 					Cn.Open();
 					
-						MySqlCommand cmd = new MySqlCommand("INSERT INTO `staff`(`id`, `Fam`, `Name`, `Patronomyc`, `DateBirth`, `City`, `Street`, `House`, `Apartment`, `Telephone`, `Socialstatus`, `Dateregistration`) VALUES" +
+						MySqlCommand cmd = new MySqlCommand("INSERT INTO `clients`(`id`, `Fam`, `Name`, `Patronomyc`, `DateBirth`, `City`, `Street`, `House`, `Apartment`, `Telephone`, `Socialstatus`, `Dateregistration`) VALUES" +
 								" ('"+null+"','" + Fam.Text + "','" + Name.Text + "','" + Patronomyc.Text + "','" + DateBirth.Text + "','" + City.Text + "','" + Street1.Text + "','" + House.Text + "','" + Apartment.Text + "','" + Telephone.Text + "','" + Socialstatus.Text + "','" + Dateregistration.Text + "')", Cn);
 						cmd.ExecuteNonQuery();
 						MessageBox.Show("Данные успешно добавлены");
@@ -62,6 +62,17 @@ namespace WpfApp5
 					Load();
 				}
 			}
+            else
+            {
+				MessageBox.Show("Заполните все поля");
+            }
 		}
-	}
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+			MainWindow fm = new MainWindow();
+			fm.Show();
+			this.Close();
+        }
+    }
 }

@@ -18,7 +18,7 @@ namespace WpfApp5
 {
     public partial class WindowStaff : Window
     {
-        MySqlConnection Cn = new MySqlConnection("server = localhost; user id = root; port=3306;persistsecurityinfo=True;database=placplac");
+        MySqlConnection Cn = new MySqlConnection("server = localhost; user id = root; port=3310;persistsecurityinfo=True;database=placplac");
         void Load()
         {
             Cn.Open();
@@ -46,7 +46,7 @@ namespace WpfApp5
                 try
                 {
                     Cn.Open();
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO `staff`(`id`, `Fam`, `Name`, `Patronomyc`, `dateemployment`, `position`, `inn`, `retirement`, `passportseries`, `passport number`, `whopassport`, `datebirtch`, `city`, `street`, `house`, `apartment`, `telephone`, `maritalstatus`, `numberchildren`) values" +
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO `staff`(`id`, `Fam`, `Name`, `Patronomyc`, `dateemployment`, `position`, `inn`, `retirement`, `passportseries`, `passportnumber`, `whopassport`, `datebirtch`, `city`, `street`, `house`, `apartment`, `telephone`, `maritalstatus`, `numberchildren`) values" +
                             " ('" + null + "','" + Fam.Text + "','" + Name.Text + "','" + Patronomyc.Text + "','" + dateemployment.Text + "','" + position.Text + "','" + inn.Text + "','" + retirement.Text + "','" + passportseries.Text + "','" + passportnumber.Text + "','" + whopassport.Text + "','" + datebirtch.Text + "','" + city.Text + "','" + street.Text + "','" + house.Text + "','" + apartment.Text + "','" + telephone.Text + "','" + maritalstatus.Text + "','" + numberchildren.Text + "')", Cn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("данные успешно добавлены");
@@ -61,6 +61,17 @@ namespace WpfApp5
                     Load();
                 }
             }
+            else
+            {
+                MessageBox.Show("Некоторые поля пусты");
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow fm = new MainWindow();
+            fm.Show();
+            this.Close();
         }
     }
 }
