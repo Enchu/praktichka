@@ -38,5 +38,12 @@ namespace WpfApp5
             InitializeComponent();
 			Load();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+			MainWindow fm = new MainWindow();
+			fm.Show();
+			this.Close();
+        }
     }
 }

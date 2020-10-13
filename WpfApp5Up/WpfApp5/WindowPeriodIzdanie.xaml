@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp5"
         mc:Ignorable="d"
-        Title="WindowPeriodIzdanie" Height="450" Width="400">
+        Title="WindowPeriodIzdanie" Height="350" Width="450">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
-        <DataGrid Grid.Column="0" IsReadOnly="True" Name="DataGridOsn" AutoGenerateColumns="False" ItemsSource="{Binding Path=dt}" Margin="0,0,-91,0">
+        <DataGrid Grid.Column="0" IsReadOnly="True" Name="DataGridOsn" AutoGenerateColumns="False" ItemsSource="{Binding Path=dt}" Margin="0,0,-33,0">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Binding="{Binding id}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="Название" Binding="{Binding name}"/>
@@ -19,5 +19,6 @@
                 <DataGridTextColumn Header="Год издания" Binding="{Binding yearofpublishing}"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="339,274,-131,0" VerticalAlignment="Top" Width="93" Height="35" Click="Button_Click"/>
     </Grid>
 </Window>
