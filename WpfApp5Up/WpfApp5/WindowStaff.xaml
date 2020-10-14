@@ -37,9 +37,9 @@
         <TextBox Name="Name" MaxLength="30" HorizontalAlignment="Left" Height="33" Margin="1668,53,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <TextBox Name="Patronomyc" MaxLength="30" HorizontalAlignment="Left" Height="34" Margin="1668,93,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <TextBox Name="inn" KeyDown="InnKD" MaxLength="10" HorizontalAlignment="Left" Height="32" Margin="1668,224,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="retirement" MaxLength="10" HorizontalAlignment="Left" Height="34" Margin="1668,263,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="passportseries" MaxLength="14" HorizontalAlignment="Left" Height="34" Margin="1668,305,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="passportnumber" MaxLength="14" HorizontalAlignment="Left" Height="33" Margin="1668,346,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="retirement" KeyDown="RetirementKD" MaxLength="10" HorizontalAlignment="Left" Height="34" Margin="1668,263,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="passportseries" KeyDown="PassportSKD" MaxLength="14" HorizontalAlignment="Left" Height="34" Margin="1668,305,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="passportnumber" KeyDown="PassportNumKD" MaxLength="14" HorizontalAlignment="Left" Height="33" Margin="1668,346,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="1520,12,-279,0" VerticalAlignment="Top"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="1520,49,-252,0" VerticalAlignment="Top"/>
         <Label Content="Отчество" HorizontalAlignment="Left" Margin="1520,93,-280,0" VerticalAlignment="Top"/>

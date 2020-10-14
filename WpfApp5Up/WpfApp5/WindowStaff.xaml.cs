@@ -109,5 +109,41 @@ namespace WpfApp5
                 e.Handled = true;
             }
         }
+
+        private void PassportSKD(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key == Key.OemComma || e.Key == Key.OemPlus || e.Key == Key.OemMinus)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void RetirementKD(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key == Key.OemComma || e.Key == Key.OemPlus || e.Key == Key.OemMinus)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void PassportNumKD(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key == Key.OemComma || e.Key == Key.OemPlus || e.Key == Key.OemMinus)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
