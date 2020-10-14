@@ -65,16 +65,28 @@
         <Label Content="Семейное положение" HorizontalAlignment="Left" Margin="1520,714,-159,0" VerticalAlignment="Top" Width="140"/>
         <Label Content="Количество детей" HorizontalAlignment="Left" Margin="1520,761,-136,0" VerticalAlignment="Top" Width="117"/>
         <TextBox x:Name="numberchildren" KeyDown="NumberChKD" MaxLength="2" HorizontalAlignment="Left" Height="34" Margin="1668,753,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox x:Name="maritalstatus" MaxLength="20" HorizontalAlignment="Left" Height="34" Margin="1668,706,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <TextBox x:Name="whopassport" MaxLength="100" HorizontalAlignment="Left" Height="33" Margin="1668,384,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="1538,810,-136,0" VerticalAlignment="Top" Width="99" Height="45" Click="Button_Click"/>
         <Label Content="+7" HorizontalAlignment="Left" Margin="1629,653,-167,0" VerticalAlignment="Top" Width="39" Height="34" FontSize="20"/>
-        <DatePicker Name="dateemployment" HorizontalAlignment="Left" Margin="1668,132,-364,0" VerticalAlignment="Top" Width="197" Height="39"/>
-        <DatePicker Name="datebirtch" HorizontalAlignment="Left" Margin="1668,424,-364,0" VerticalAlignment="Top" Width="197" Height="45"/>
-        <ComboBox Name="position" HorizontalAlignment="Left" Margin="1668,176,-364,0" VerticalAlignment="Top" Width="197" Height="43">
+        <DatePicker Name="dateemployment" HorizontalAlignment="Left" Margin="1668,132,-364,0" VerticalAlignment="Top" Width="197" Height="39">
+            <DatePicker.BlackoutDates>
+                <CalendarDateRange Start="900-01-01" End="1900-01-01"></CalendarDateRange>
+            </DatePicker.BlackoutDates>
+        </DatePicker>
+        <DatePicker Name="datebirtch" HorizontalAlignment="Left" Margin="1668,424,-364,0" VerticalAlignment="Top" Width="197" Height="45">
+            <DatePicker.BlackoutDates>
+                <CalendarDateRange Start="900-01-01" End="1900-01-01"></CalendarDateRange>
+            </DatePicker.BlackoutDates>
+        </DatePicker>
+        <ComboBox Name="position" HorizontalAlignment="Left" Margin="1668,176,-364,0" VerticalAlignment="Top" Width="197" Height="45">
             <TextBlock>Менеджер</TextBlock>
             <TextBlock>Работник</TextBlock>
             <TextBlock>Бухгалтер</TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="maritalstatus" HorizontalAlignment="Left" Margin="1668,695,-364,0" VerticalAlignment="Top" Width="197" Height="45">
+            <TextBlock>Чист</TextBlock>
+            <TextBlock>Замужем</TextBlock>
+            <TextBlock>Разведен</TextBlock>
         </ComboBox>
 
     </Grid>

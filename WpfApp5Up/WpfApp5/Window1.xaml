@@ -47,12 +47,21 @@
         <Label Content="Дата регистрации" HorizontalAlignment="Left" Margin="912,437,-519,0" VerticalAlignment="Top"/>
         <ComboBox Name="Socialstatus" HorizontalAlignment="Left" Margin="1060,390,-756,0" VerticalAlignment="Top" Width="197" Height="26">
             <TextBlock>Ученик</TextBlock>
-            <TextBlock>Работник</TextBlock>
+            <TextBlock>Труженик</TextBlock>
+            <TextBlock>Гражданин РФ</TextBlock>
         </ComboBox>
         <Button Name="TBAdd" Click="TBAdd_Click" HorizontalAlignment="Left" Margin="1060,480,-756,0" VerticalAlignment="Top" Width="197" Height="45" Content="Внести пользователя"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="912,480,-206,0" VerticalAlignment="Top" Width="95" Height="45" Click="Button_Click"/>
         <Label Content="+7" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="39" Height="33" FontSize="20" Margin="1016,342,-254,0"/>
-        <DatePicker Name="DateBirth" HorizontalAlignment="Left" Margin="1060,128,-456,0" VerticalAlignment="Top" Width="197" Height="39"/>
-        <DatePicker Name="Dateregistration" HorizontalAlignment="Left" Margin="1060,423,-456,0" VerticalAlignment="Top" Width="197" Height="40"/>
+        <DatePicker Name="DateBirth" HorizontalAlignment="Left" Margin="1060,128,-456,0" VerticalAlignment="Top" Width="197" Height="39">
+            <DatePicker.BlackoutDates>
+                <CalendarDateRange Start="900-01-01" End="1900-01-01"></CalendarDateRange>
+            </DatePicker.BlackoutDates>
+        </DatePicker>
+        <DatePicker Name="Dateregistration" HorizontalAlignment="Left" Margin="1060,423,-456,0" VerticalAlignment="Top" Width="197" Height="40">
+            <DatePicker.BlackoutDates>
+                <CalendarDateRange Start="900-01-01" End="1900-01-01"></CalendarDateRange>
+            </DatePicker.BlackoutDates>
+        </DatePicker>
     </Grid>
 </Window>
