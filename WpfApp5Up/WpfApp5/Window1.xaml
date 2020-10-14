@@ -26,15 +26,14 @@
                 <DataGridTextColumn Header="Дата рождения" Binding="{Binding Dateregistration}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBox Name="Fam" HorizontalAlignment="Left" Height="35" Margin="1060,9,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="Name" HorizontalAlignment="Left" Height="33" Margin="1060,49,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="Patronomyc" HorizontalAlignment="Left" Height="34" Margin="1060,89,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="DateBirth" HorizontalAlignment="Left" Height="34" Margin="1060,131,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="City" HorizontalAlignment="Left" Height="32" Margin="1060,172,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="Street1" HorizontalAlignment="Left" Height="32" Margin="1060,220,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="House" HorizontalAlignment="Left" Height="34" Margin="1060,259,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="Apartment" HorizontalAlignment="Left" Height="34" Margin="1060,301,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="Telephone" HorizontalAlignment="Left" Height="33" Margin="1060,342,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Fam" MaxLength="30" HorizontalAlignment="Left" Height="35" Margin="1060,9,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Name" MaxLength="30" HorizontalAlignment="Left" Height="33" Margin="1060,49,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Patronomyc" MaxLength="30" HorizontalAlignment="Left" Height="34" Margin="1060,89,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="City" MaxLength="40" HorizontalAlignment="Left" Height="32" Margin="1060,172,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Street1" MaxLength="40" HorizontalAlignment="Left" Height="32" Margin="1060,220,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="House" MaxLength="15" HorizontalAlignment="Left" Height="34" Margin="1060,259,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Apartment" MaxLength="10" HorizontalAlignment="Left" Height="34" Margin="1060,301,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Telephone" KeyDown="PhoneKD" MaxLength="10" HorizontalAlignment="Left" Height="33" Margin="1060,342,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="912,8,-471,0" VerticalAlignment="Top"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="912,45,-444,0" VerticalAlignment="Top"/>
         <Label Content="Отчество" HorizontalAlignment="Left" Margin="912,89,-472,0" VerticalAlignment="Top"/>
@@ -46,13 +45,14 @@
         <Label Content="Телефон" HorizontalAlignment="Left" Margin="912,349,-468,0" VerticalAlignment="Top"/>
         <Label Content="Социальный статус" HorizontalAlignment="Left" Margin="912,390,-527,0" VerticalAlignment="Top"/>
         <Label Content="Дата регистрации" HorizontalAlignment="Left" Margin="912,437,-519,0" VerticalAlignment="Top"/>
-        <TextBox Name="Dateregistration" HorizontalAlignment="Left" Height="34" Margin="1060,429,-756,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <ComboBox Name="Socialstatus" HorizontalAlignment="Left" Margin="1060,390,-756,0" VerticalAlignment="Top" Width="197" Height="26">
             <TextBlock>Ученик</TextBlock>
             <TextBlock>Работник</TextBlock>
         </ComboBox>
         <Button Name="TBAdd" Click="TBAdd_Click" HorizontalAlignment="Left" Margin="1060,480,-756,0" VerticalAlignment="Top" Width="197" Height="45" Content="Внести пользователя"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="912,480,-206,0" VerticalAlignment="Top" Width="95" Height="45" Click="Button_Click"/>
-
+        <Label Content="+7" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="39" Height="33" FontSize="20" Margin="1016,342,-254,0"/>
+        <DatePicker Name="DateBirth" HorizontalAlignment="Left" Margin="1060,128,-456,0" VerticalAlignment="Top" Width="197" Height="39"/>
+        <DatePicker Name="Dateregistration" HorizontalAlignment="Left" Margin="1060,423,-456,0" VerticalAlignment="Top" Width="197" Height="40"/>
     </Grid>
 </Window>

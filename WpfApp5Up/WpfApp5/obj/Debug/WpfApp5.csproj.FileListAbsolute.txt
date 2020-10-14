@@ -132,3 +132,4 @@ C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\WpfA
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\WpfApp5.csproj.CopyComplete
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\WpfApp5.exe
 C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\WpfApp5.pdb
+C:\Users\Алексей\Source\Repos\praktichka\WpfApp5Up\WpfApp5\obj\Debug\WpfApp5.csprojAssemblyReference.cache

@@ -33,15 +33,13 @@
                 <DataGridTextColumn Header="Количество детей" Binding="{Binding numberchildren}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBox Name="Fam" HorizontalAlignment="Left" Height="35" Margin="1668,13,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="Name" HorizontalAlignment="Left" Height="33" Margin="1668,53,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="Patronomyc" HorizontalAlignment="Left" Height="34" Margin="1668,93,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="dateemployment" HorizontalAlignment="Left" Height="34" Margin="1668,135,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="position" HorizontalAlignment="Left" Height="32" Margin="1668,176,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="inn" HorizontalAlignment="Left" Height="32" Margin="1668,224,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="retirement" HorizontalAlignment="Left" Height="34" Margin="1668,263,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="passportseries" HorizontalAlignment="Left" Height="34" Margin="1668,305,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox Name="passportnumber" HorizontalAlignment="Left" Height="33" Margin="1668,346,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Fam" MaxLength="30" HorizontalAlignment="Left" Height="35" Margin="1668,13,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Name" MaxLength="30" HorizontalAlignment="Left" Height="33" Margin="1668,53,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="Patronomyc" MaxLength="30" HorizontalAlignment="Left" Height="34" Margin="1668,93,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="inn" KeyDown="InnKD" MaxLength="10" HorizontalAlignment="Left" Height="32" Margin="1668,224,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="retirement" MaxLength="10" HorizontalAlignment="Left" Height="34" Margin="1668,263,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="passportseries" MaxLength="14" HorizontalAlignment="Left" Height="34" Margin="1668,305,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox Name="passportnumber" MaxLength="14" HorizontalAlignment="Left" Height="33" Margin="1668,346,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="1520,12,-279,0" VerticalAlignment="Top"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="1520,49,-252,0" VerticalAlignment="Top"/>
         <Label Content="Отчество" HorizontalAlignment="Left" Margin="1520,93,-280,0" VerticalAlignment="Top"/>
@@ -53,24 +51,31 @@
         <Label Content="Номер паспорт" HorizontalAlignment="Left" Margin="1520,353,-276,0" VerticalAlignment="Top"/>
         <Label Content="Кем выдан паспорт" HorizontalAlignment="Left" Margin="1520,394,-335,0" VerticalAlignment="Top"/>
         <Label Content="Дата регистрации" HorizontalAlignment="Left" Margin="1520,441,-327,0" VerticalAlignment="Top"/>
-        <TextBox Name="datebirtch" HorizontalAlignment="Left" Height="34" Margin="1668,433,-564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <Button Name="TBAdd" Click="TBAdd_Click" HorizontalAlignment="Left" Margin="1668,810,-364,0" VerticalAlignment="Top" Width="197" Height="45" Content="Занести"/>
-        <TextBox x:Name="city" HorizontalAlignment="Left" Height="34" Margin="1668,483,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox x:Name="street" HorizontalAlignment="Left" Height="34" Margin="1668,525,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox x:Name="house" HorizontalAlignment="Left" Height="32" Margin="1668,566,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox x:Name="apartment" HorizontalAlignment="Left" Height="32" Margin="1668,614,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox x:Name="telephone" HorizontalAlignment="Left" Height="34" Margin="1668,653,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="city" MaxLength="30" HorizontalAlignment="Left" Height="34" Margin="1668,483,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="street" MaxLength="30" HorizontalAlignment="Left" Height="34" Margin="1668,525,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="house" MaxLength="30" HorizontalAlignment="Left" Height="32" Margin="1668,566,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="apartment" MaxLength="30" HorizontalAlignment="Left" Height="32" Margin="1668,614,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="telephone" KeyDown="PhoneKD" MaxLength="10" HorizontalAlignment="Left" Height="34" Margin="1668,653,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <Label Content="Город" HorizontalAlignment="Left" Margin="1520,483,-79,0" VerticalAlignment="Top"/>
         <Label Content="Улица" HorizontalAlignment="Left" Margin="1520,521,-113,0" VerticalAlignment="Top"/>
         <Label Content="Дом" HorizontalAlignment="Left" Margin="1520,562,-61,0" VerticalAlignment="Top"/>
         <Label Content="Квартира" HorizontalAlignment="Left" Margin="1520,614,-111,0" VerticalAlignment="Top" Width="92"/>
-        <Label Content="Телефон" HorizontalAlignment="Left" Margin="1520,661,-111,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="1520,662,-93,0" VerticalAlignment="Top" Width="74"/>
         <Label Content="Семейное положение" HorizontalAlignment="Left" Margin="1520,714,-159,0" VerticalAlignment="Top" Width="140"/>
         <Label Content="Количество детей" HorizontalAlignment="Left" Margin="1520,761,-136,0" VerticalAlignment="Top" Width="117"/>
-        <TextBox x:Name="numberchildren" HorizontalAlignment="Left" Height="34" Margin="1668,753,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox x:Name="maritalstatus" HorizontalAlignment="Left" Height="34" Margin="1668,706,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <TextBox x:Name="whopassport" HorizontalAlignment="Left" Height="33" Margin="1668,384,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="numberchildren" KeyDown="NumberChKD" MaxLength="2" HorizontalAlignment="Left" Height="34" Margin="1668,753,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="maritalstatus" MaxLength="20" HorizontalAlignment="Left" Height="34" Margin="1668,706,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="whopassport" MaxLength="100" HorizontalAlignment="Left" Height="33" Margin="1668,384,-364,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="1538,810,-136,0" VerticalAlignment="Top" Width="99" Height="45" Click="Button_Click"/>
+        <Label Content="+7" HorizontalAlignment="Left" Margin="1629,653,-167,0" VerticalAlignment="Top" Width="39" Height="34" FontSize="20"/>
+        <DatePicker Name="dateemployment" HorizontalAlignment="Left" Margin="1668,132,-364,0" VerticalAlignment="Top" Width="197" Height="39"/>
+        <DatePicker Name="datebirtch" HorizontalAlignment="Left" Margin="1668,424,-364,0" VerticalAlignment="Top" Width="197" Height="45"/>
+        <ComboBox Name="position" HorizontalAlignment="Left" Margin="1668,176,-364,0" VerticalAlignment="Top" Width="197" Height="43">
+            <TextBlock>Менеджер</TextBlock>
+            <TextBlock>Работник</TextBlock>
+            <TextBlock>Бухгалтер</TextBlock>
+        </ComboBox>
 
     </Grid>
 </Window>
